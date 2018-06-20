@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.modz.entry"
+    android:versionCode="3"
+    android:versionName="1.0"
+    tools:ignore="GradleOverrides">
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="27" />
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="DodderPluginDemo">
+        <meta-data
+            android:name="Entry"
+            android:value="com.modz.entry.Entry" />
+        <meta-data
+            android:name="Target0"
+            android:value="*" /><!-- Target0-->
+        <meta-data
+            android:name="Version0"
+            android:value="*" /><!-- Version0-->
+        <meta-data
+            android:name="Aid"
+            android:value="doddercat-9999" />
+    </application>
+
+</manifest>

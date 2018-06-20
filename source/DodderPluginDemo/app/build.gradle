@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.modz.demo"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+            buildConfigField "String", "BuildTimestamp", ('"' + new Date().format("yyMMdd.HHmmss") + '.R"')
+        }
+    }
+    def outputFileName
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.applicationId}.apk".toLowerCase()
+        }
+    }
+
+
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    provided files('libs/pluginInterface.jar')
+    compile(name: 'chatsdk-release', ext: 'aar')
+}

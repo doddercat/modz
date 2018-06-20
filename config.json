@@ -1,0 +1,43 @@
+{
+
+		"author": "doddercat(developer name)",
+		"id": "doddercat",
+		"introduce": "this is demo(developer introduction)",
+	"modzList": [{
+
+		"modz": "https://github.com/doddercat/modz/raw/master/com.dodder.box.plugin.demo/com.dodder.box.plugin.demo.modz",
+		"readme": "https://github.com/doddercat/modz/raw/master/com.dodder.box.plugin.demo/README.md",
+		"desc": "introduce modz(modz introduction)",
+		"name": "doddercat(modz name)",
+		"pkgName": "com.dodder.box.plugin.demo",
+		"versionCode": 2,
+		"versionName": "1.2",
+		"target": "target game pkgname",
+		"support": "target game version code",
+		"gameName": "game name",
+		"iconUrl": "https://raw.githubusercontent.com/doddercat/modz/master/com.dodder.box.plugin.demo/screenshot/icon.png",
+		"changelog": [{
+				"versionCode": 2,
+				"versionName": "1.2",
+				"whatsNew": "whatsNew"
+			},
+			{
+				"versionCode": 1,
+				"versionName": "1.1",
+				"whatsNew": "whatsNew"
+			}
+		],
+		"screenshotUrl": [
+			"https://raw.githubusercontent.com/doddercat/modz/master/com.dodder.box.plugin.demo/screenshot/demomod.png",
+			"https://raw.githubusercontent.com/doddercat/modz/master/com.dodder.box.plugin.demo/screenshot/demomod.png"
+		],
+		"videoUrl": [
+			""
+		],
+
+		"gameDownloadUrl": [
+			"https://apkpure.com/cn/doodle-fighter/com.yyhd.df1"
+		]
+
+	}]
+}
